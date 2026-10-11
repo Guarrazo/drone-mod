@@ -1,0 +1,12 @@
+Vehicle.cm_mnc_behemoth:
+  $base: Vehicle.v_utility4_militech_behemoth
+  appearanceName: militech_behemoth_basic_camo_01
+  icon: UIIcon.cm_mnc_behemoth
+
+UIIcon.cm_mnc_behemoth:
+  $type: UIIcon_Record
+  atlasResourcePath: r"mnc\ui\vehicles\behemoth_photo.inkatlas"
+  atlasPartName: n"photo"
+
+Vehicle.vehicle_list.list:
+  - !append-once Vehicle.cm_mnc_behemoth

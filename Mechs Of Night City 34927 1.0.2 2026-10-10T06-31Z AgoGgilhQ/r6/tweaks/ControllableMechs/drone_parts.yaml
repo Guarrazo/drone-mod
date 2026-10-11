@@ -1,0 +1,156 @@
+Items.MNC_OctantParts:
+  $type: gamedataItem_Record
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  canDrop: True
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.RareMaterial1
+        amount: 15
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.EpicMaterial1
+        amount: 5
+  crosshair: Crosshairs.None
+  deprecated: False
+  dropObject: defaultItemDrop
+  enableNpcRPGData: False
+  friendlyName: ''
+  garmentOffset: 0
+  icon: UIIcon.mnc_parts_octant
+  iconPath: mnc_parts_octant
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: False
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Gen_Misc
+  localizedName: ''
+  mass: 2
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  powerLevelDeterminedByParent: False
+  quality: Quality.Epic
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: True
+  animationParameters: []
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.BasePrice
+    - Price.BuyMultiplier
+    - Price.ItemQualityMultiplier
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
+  displayName: LocKey#mnc_parts_octant_name
+  equipAreas: []
+  equipPrereqs: []
+  gameplayRestrictions: []
+  hairSkinnedMeshComponents: []
+  localizedDescription: LocKey#mnc_parts_octant_desc
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.BasePrice
+    - Price.SellMultiplier
+    - Price.ItemQualitySellMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  tags:
+    - MNC_DroneParts
+    - SkipActivityLog
+  variants: []
+  visualTags: []
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+  statModifierGroups: []
+  statModifiers: []
+  statPools: []
+  weakspots: []
+
+Items.MNC_WyvernParts:
+  $base: Items.MNC_OctantParts
+  quality: Quality.Uncommon
+  icon: UIIcon.mnc_parts_wyvern
+  iconPath: mnc_parts_wyvern
+  displayName: LocKey#mnc_parts_wyvern_name
+  localizedDescription: LocKey#mnc_parts_wyvern_desc
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.CommonMaterial1
+        amount: 15
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.UncommonMaterial1
+        amount: 8
+
+Items.MNC_GriffinParts:
+  $base: Items.MNC_OctantParts
+  quality: Quality.Rare
+  icon: UIIcon.mnc_parts_griffin
+  iconPath: mnc_parts_griffin
+  displayName: LocKey#mnc_parts_griffin_name
+  localizedDescription: LocKey#mnc_parts_griffin_desc
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.UncommonMaterial1
+        amount: 15
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.RareMaterial1
+        amount: 6
+
+Items.MNC_BombusKit:
+  $base: Items.MNC_OctantParts
+  quality: Quality.Common
+  icon: UIIcon.mnc_kit_bombus
+  iconPath: mnc_kit_bombus
+  displayName: LocKey#mnc_kit_bombus_name
+  localizedDescription: LocKey#mnc_kit_bombus_desc
+  tags:
+    - MNC_BombusKit
+    - SkipActivityLog
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        ingredient: Items.CommonMaterial1
+        amount: 10
+
+UIIcon.mnc_parts_octant:
+  $type: UIIcon_Record
+  atlasResourcePath: r"mnc\ui\items\drone_parts.inkatlas"
+  atlasPartName: n"octant"
+
+UIIcon.mnc_parts_wyvern:
+  $type: UIIcon_Record
+  atlasResourcePath: r"mnc\ui\items\drone_parts.inkatlas"
+  atlasPartName: n"wyvern"
+
+UIIcon.mnc_parts_griffin:
+  $type: UIIcon_Record
+  atlasResourcePath: r"mnc\ui\items\drone_parts.inkatlas"
+  atlasPartName: n"griffin"
+
+UIIcon.mnc_kit_bombus:
+  $type: UIIcon_Record
+  atlasResourcePath: r"mnc\ui\items\drone_parts.inkatlas"
+  atlasPartName: n"bombus"

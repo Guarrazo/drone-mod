@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<bindings>
+	<context name="CMMechLink">
+		<action name="CM_OpenLink" map="CM_OpenLink_Button" />
+		<action name="CM_LinkLookAt" map="CM_LinkLookAt_Button" />
+		<action name="CM_Pilot" map="CM_Pilot_Button" />
+	</context>
+
+	<context name="Exploration" append="true">
+		<include name="CMMechLink" />
+	</context>
+	<context name="Combat" append="true">
+		<include name="CMMechLink" />
+	</context>
+	<context name="Locomotion" append="true">
+		<include name="CMMechLink" />
+	</context>
+
+	<acceptedEvents action="CM_OpenLink">
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	<acceptedEvents action="CM_LinkLookAt">
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+	<acceptedEvents action="CM_Pilot">
+		<event name="BUTTON_PRESSED" />
+	</acceptedEvents>
+
+	<mapping name="CM_OpenLink_Button" type="Button">
+		<button id="IK_O" overridableUI="cmOpenLink" />
+	</mapping>
+	<mapping name="CM_LinkLookAt_Button" type="Button">
+		<button id="IK_LeftBracket" overridableUI="cmLinkLookAt" />
+	</mapping>
+	<mapping name="CM_Pilot_Button" type="Button">
+		<button id="IK_U" overridableUI="cmPilot" />
+	</mapping>
+</bindings>

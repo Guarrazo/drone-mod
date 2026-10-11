@@ -1,0 +1,1121 @@
+UIIcon.dc_filter:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: dc_filter
+
+UIIcon.dc_octant:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: octant
+
+UIIcon.dc_wyvern:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: wyvern
+
+UIIcon.dc_griffin:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: griffin
+
+UIIcon.dc_bombus:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: bombus
+
+UIIcon.dc_minotaur:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: minotaur
+
+UIIcon.dc_android:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: android
+
+UIIcon.dc_flathead:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: flathead
+
+UIIcon.dc_chimera:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: chimera
+
+UIIcon.dc_cerberus:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: cerberus
+
+UIIcon.dc_capacity:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: capacity
+
+DroneCompanion.ShardPriceBombus:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 25000
+
+DroneCompanion.ShardSellBombus:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 2500
+
+DroneCompanion.ShardBombus:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_bombus
+  iconPath: dc_bombus
+  displayName: LocKey#Mod-DroneCompanion-Shard-Bombus
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Bombus-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Uncommon
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceBombus ]
+  sellPrice: [ DroneCompanion.ShardSellBombus ]
+
+DroneCompanion.StockBombus:
+  $type: VendorItem
+  item: DroneCompanion.ShardBombus
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceOctant:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 45000
+
+DroneCompanion.ShardSellOctant:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 4500
+
+DroneCompanion.ShardOctant:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_octant
+  iconPath: dc_octant
+  displayName: LocKey#Mod-DroneCompanion-Shard-Octant
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Octant-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceOctant ]
+  sellPrice: [ DroneCompanion.ShardSellOctant ]
+
+DroneCompanion.StockOctant:
+  $type: VendorItem
+  item: DroneCompanion.ShardOctant
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceAndroid:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 50000
+
+DroneCompanion.ShardSellAndroid:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 5000
+
+DroneCompanion.ShardAndroid:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_android
+  iconPath: dc_android
+  displayName: LocKey#Mod-DroneCompanion-Shard-Android
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Android-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceAndroid ]
+  sellPrice: [ DroneCompanion.ShardSellAndroid ]
+
+DroneCompanion.StockAndroid:
+  $type: VendorItem
+  item: DroneCompanion.ShardAndroid
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceGriffin:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 60000
+
+DroneCompanion.ShardSellGriffin:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 6000
+
+DroneCompanion.ShardGriffin:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_griffin
+  iconPath: dc_griffin
+  displayName: LocKey#Mod-DroneCompanion-Shard-Griffin
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Griffin-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceGriffin ]
+  sellPrice: [ DroneCompanion.ShardSellGriffin ]
+
+DroneCompanion.StockGriffin:
+  $type: VendorItem
+  item: DroneCompanion.ShardGriffin
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceWyvern:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 75000
+
+DroneCompanion.ShardSellWyvern:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 7500
+
+DroneCompanion.ShardWyvern:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_wyvern
+  iconPath: dc_wyvern
+  displayName: LocKey#Mod-DroneCompanion-Shard-Wyvern
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Wyvern-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Epic
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceWyvern ]
+  sellPrice: [ DroneCompanion.ShardSellWyvern ]
+
+DroneCompanion.StockWyvern:
+  $type: VendorItem
+  item: DroneCompanion.ShardWyvern
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceMinotaur:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 110000
+
+DroneCompanion.ShardSellMinotaur:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 11000
+
+DroneCompanion.ShardMinotaur:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_minotaur
+  iconPath: dc_minotaur
+  displayName: LocKey#Mod-DroneCompanion-Shard-Minotaur
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Minotaur-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Epic
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceMinotaur ]
+  sellPrice: [ DroneCompanion.ShardSellMinotaur ]
+
+DroneCompanion.StockMinotaur:
+  $type: VendorItem
+  item: DroneCompanion.ShardMinotaur
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardPriceCerberus:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 250000
+
+DroneCompanion.ShardSellCerberus:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 25000
+
+DroneCompanion.ShardCerberus:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_cerberus
+  iconPath: dc_cerberus
+  displayName: LocKey#Mod-DroneCompanion-Shard-Cerberus
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Cerberus-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Legendary
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardPriceCerberus ]
+  sellPrice: [ DroneCompanion.ShardSellCerberus ]
+
+DroneCompanion.StockCerberus:
+  $type: VendorItem
+  item: DroneCompanion.ShardCerberus
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardFlatheadPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 30000
+
+DroneCompanion.ShardFlatheadSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 3000
+
+DroneCompanion.ShardFlathead:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_flathead
+  iconPath: dc_flathead
+  displayName: LocKey#Mod-DroneCompanion-Shard-Flathead
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Flathead-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Uncommon
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardFlatheadPrice ]
+  sellPrice: [ DroneCompanion.ShardFlatheadSell ]
+
+DroneCompanion.StockShardFlathead:
+  $type: VendorItem
+  item: DroneCompanion.ShardFlathead
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.ShardChimeraPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 350000
+
+DroneCompanion.ShardChimeraSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 35000
+
+DroneCompanion.ShardChimera:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_chimera
+  iconPath: dc_chimera
+  displayName: LocKey#Mod-DroneCompanion-Shard-Chimera
+  localizedDescription: LocKey#Mod-DroneCompanion-Shard-Chimera-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Legendary
+  objectActions: []
+  buyPrice: [ DroneCompanion.ShardChimeraPrice ]
+  sellPrice: [ DroneCompanion.ShardChimeraSell ]
+
+DroneCompanion.StockShardChimera:
+  $type: VendorItem
+  item: DroneCompanion.ShardChimera
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.CapacityModulePrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 15000
+
+DroneCompanion.CapacityModuleSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 1500
+
+DroneCompanion.CapacityModule:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_capacity
+  iconPath: dc_capacity
+  displayName: LocKey#Mod-DroneCompanion-Capacity
+  localizedDescription: LocKey#Mod-DroneCompanion-Capacity-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.CapacityModulePrice ]
+  sellPrice: [ DroneCompanion.CapacityModuleSell ]
+
+DroneCompanion.StockCapacityModule:
+  $type: VendorItem
+  item: DroneCompanion.CapacityModule
+  quantity: [ Vendors.Always_Present ]
+
+Vendors.wat_nid_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.wat_lch_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.wat_kab_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.wat_kab_gunsmith_02:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.wbr_jpn_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.hey_spr_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.hey_gle_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.std_arr_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.std_rcr_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.bls_ina_se1_gunsmith_01a:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.bls_ina_se1_gunsmith_02:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.bls_ina_se5_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.cz_stadium_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+Vendors.cz_con_gunsmith_01:
+  itemStock:
+    - !append DroneCompanion.StockBombus
+    - !append DroneCompanion.StockOctant
+    - !append DroneCompanion.StockAndroid
+    - !append DroneCompanion.StockGriffin
+    - !append DroneCompanion.StockWyvern
+    - !append DroneCompanion.StockMinotaur
+    - !append DroneCompanion.StockCerberus
+    - !append DroneCompanion.StockShardFlathead
+    - !append DroneCompanion.StockShardChimera
+    - !append DroneCompanion.StockCapacityModule
+    - !append DroneCompanion.StockUpCombat
+    - !append DroneCompanion.StockUpSupport
+    - !append DroneCompanion.StockUpUtility
+    - !append DroneCompanion.StockGatekeeper
+
+DroneCompanion.GatekeeperPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 30000
+
+DroneCompanion.GatekeeperSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 3000
+
+DroneCompanion.RiggerGatekeeper:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_gatekeeper
+  iconPath: dc_gatekeeper
+  displayName: LocKey#Mod-DroneCompanion-Gatekeeper
+  localizedDescription: LocKey#Mod-DroneCompanion-Gatekeeper-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Legendary
+  objectActions: []
+  buyPrice: [ DroneCompanion.GatekeeperPrice ]
+  sellPrice: [ DroneCompanion.GatekeeperSell ]
+
+DroneCompanion.StockGatekeeper:
+  $type: VendorItem
+  item: DroneCompanion.RiggerGatekeeper
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.UpCombatPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 15000
+
+DroneCompanion.UpCombatSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 1500
+
+DroneCompanion.UpCombat:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_upcombat
+  iconPath: dc_upcombat
+  displayName: LocKey#Mod-DroneCompanion-UpCombat
+  localizedDescription: LocKey#Mod-DroneCompanion-UpCombat-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.UpCombatPrice ]
+  sellPrice: [ DroneCompanion.UpCombatSell ]
+
+DroneCompanion.StockUpCombat:
+  $type: VendorItem
+  item: DroneCompanion.UpCombat
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.UpSupportPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 15000
+
+DroneCompanion.UpSupportSell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 1500
+
+DroneCompanion.UpSupport:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_upsupport
+  iconPath: dc_upsupport
+  displayName: LocKey#Mod-DroneCompanion-UpSupport
+  localizedDescription: LocKey#Mod-DroneCompanion-UpSupport-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.UpSupportPrice ]
+  sellPrice: [ DroneCompanion.UpSupportSell ]
+
+DroneCompanion.StockUpSupport:
+  $type: VendorItem
+  item: DroneCompanion.UpSupport
+  quantity: [ Vendors.Always_Present ]
+
+DroneCompanion.UpUtilityPrice:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 15000
+
+DroneCompanion.UpUtilitySell:
+  $type: ConstantStatModifier
+  statType: BaseStats.Price
+  modifierType: Additive
+  value: 1500
+
+DroneCompanion.UpUtility:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_uputility
+  iconPath: dc_uputility
+  displayName: LocKey#Mod-DroneCompanion-UpUtility
+  localizedDescription: LocKey#Mod-DroneCompanion-UpUtility-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ NoVisuals, DroneCompanionGear ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: [ DroneCompanion.UpUtilityPrice ]
+  sellPrice: [ DroneCompanion.UpUtilitySell ]
+
+DroneCompanion.StockUpUtility:
+  $type: VendorItem
+  item: DroneCompanion.UpUtility
+  quantity: [ Vendors.Always_Present ]
+
+UIIcon.dc_gatekeeper:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: gatekeeper
+
+UIIcon.dc_upcombat:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: upcombat
+
+UIIcon.dc_upsupport:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: upsupport
+
+UIIcon.dc_uputility:
+  $type: UIIcon
+  atlasResourcePath: dronecompanion\gui\dc_icons.inkatlas
+  atlasPartName: uputility
+
+
+DroneCompanion.CraftPackBombus:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackBombus_inline1
+    - DroneCompanion.CraftPackBombus_inline2
+    - DroneCompanion.CraftPackBombus_inline3
+
+DroneCompanion.CraftPackBombus_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.CommonMaterial1
+  amount: 120
+
+DroneCompanion.CraftPackBombus_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.UncommonMaterial1
+  amount: 60
+
+DroneCompanion.CraftPackBombus_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackUncommonMaterial1
+  amount: 20
+
+DroneCompanion.CraftBombus:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_bombus
+  iconPath: dc_bombus
+  displayName: LocKey#Mod-DroneCompanion-Craft-Bombus
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Bombus-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Uncommon
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackBombus
+
+DroneCompanion.CraftPackFlathead:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackFlathead_inline1
+    - DroneCompanion.CraftPackFlathead_inline2
+    - DroneCompanion.CraftPackFlathead_inline3
+
+DroneCompanion.CraftPackFlathead_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.CommonMaterial1
+  amount: 150
+
+DroneCompanion.CraftPackFlathead_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.UncommonMaterial1
+  amount: 80
+
+DroneCompanion.CraftPackFlathead_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackUncommonMaterial1
+  amount: 25
+
+DroneCompanion.CraftFlathead:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_flathead
+  iconPath: dc_flathead
+  displayName: LocKey#Mod-DroneCompanion-Craft-Flathead
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Flathead-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Uncommon
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackFlathead
+
+DroneCompanion.CraftPackOctant:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackOctant_inline1
+    - DroneCompanion.CraftPackOctant_inline2
+    - DroneCompanion.CraftPackOctant_inline3
+
+DroneCompanion.CraftPackOctant_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.UncommonMaterial1
+  amount: 80
+
+DroneCompanion.CraftPackOctant_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.RareMaterial1
+  amount: 40
+
+DroneCompanion.CraftPackOctant_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackRareMaterial1
+  amount: 20
+
+DroneCompanion.CraftOctant:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_octant
+  iconPath: dc_octant
+  displayName: LocKey#Mod-DroneCompanion-Craft-Octant
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Octant-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackOctant
+
+DroneCompanion.CraftPackAndroid:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackAndroid_inline1
+    - DroneCompanion.CraftPackAndroid_inline2
+    - DroneCompanion.CraftPackAndroid_inline3
+
+DroneCompanion.CraftPackAndroid_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.UncommonMaterial1
+  amount: 90
+
+DroneCompanion.CraftPackAndroid_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.RareMaterial1
+  amount: 45
+
+DroneCompanion.CraftPackAndroid_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackRareMaterial1
+  amount: 20
+
+DroneCompanion.CraftAndroid:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_android
+  iconPath: dc_android
+  displayName: LocKey#Mod-DroneCompanion-Craft-Android
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Android-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackAndroid
+
+DroneCompanion.CraftPackGriffin:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackGriffin_inline1
+    - DroneCompanion.CraftPackGriffin_inline2
+    - DroneCompanion.CraftPackGriffin_inline3
+
+DroneCompanion.CraftPackGriffin_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.RareMaterial1
+  amount: 60
+
+DroneCompanion.CraftPackGriffin_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.EpicMaterial1
+  amount: 25
+
+DroneCompanion.CraftPackGriffin_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackRareMaterial1
+  amount: 25
+
+DroneCompanion.CraftGriffin:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_griffin
+  iconPath: dc_griffin
+  displayName: LocKey#Mod-DroneCompanion-Craft-Griffin
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Griffin-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Rare
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackGriffin
+
+DroneCompanion.CraftPackWyvern:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackWyvern_inline1
+    - DroneCompanion.CraftPackWyvern_inline2
+    - DroneCompanion.CraftPackWyvern_inline3
+
+DroneCompanion.CraftPackWyvern_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.RareMaterial1
+  amount: 80
+
+DroneCompanion.CraftPackWyvern_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.EpicMaterial1
+  amount: 30
+
+DroneCompanion.CraftPackWyvern_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackEpicMaterial1
+  amount: 15
+
+DroneCompanion.CraftWyvern:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_wyvern
+  iconPath: dc_wyvern
+  displayName: LocKey#Mod-DroneCompanion-Craft-Wyvern
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Wyvern-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Epic
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackWyvern
+
+DroneCompanion.CraftPackMinotaur:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackMinotaur_inline1
+    - DroneCompanion.CraftPackMinotaur_inline2
+    - DroneCompanion.CraftPackMinotaur_inline3
+
+DroneCompanion.CraftPackMinotaur_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.EpicMaterial1
+  amount: 50
+
+DroneCompanion.CraftPackMinotaur_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.LegendaryMaterial1
+  amount: 12
+
+DroneCompanion.CraftPackMinotaur_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackEpicMaterial1
+  amount: 20
+
+DroneCompanion.CraftMinotaur:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_minotaur
+  iconPath: dc_minotaur
+  displayName: LocKey#Mod-DroneCompanion-Craft-Minotaur
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Minotaur-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Epic
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackMinotaur
+
+DroneCompanion.CraftPackCerberus:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackCerberus_inline1
+    - DroneCompanion.CraftPackCerberus_inline2
+    - DroneCompanion.CraftPackCerberus_inline3
+
+DroneCompanion.CraftPackCerberus_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.EpicMaterial1
+  amount: 90
+
+DroneCompanion.CraftPackCerberus_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.LegendaryMaterial1
+  amount: 30
+
+DroneCompanion.CraftPackCerberus_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackLegendaryMaterial1
+  amount: 15
+
+DroneCompanion.CraftCerberus:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_cerberus
+  iconPath: dc_cerberus
+  displayName: LocKey#Mod-DroneCompanion-Craft-Cerberus
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Cerberus-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Legendary
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackCerberus
+
+DroneCompanion.CraftPackChimera:
+  $type: gamedataCraftingPackage_Record
+  craftingRecipe:
+    - DroneCompanion.CraftPackChimera_inline1
+    - DroneCompanion.CraftPackChimera_inline2
+    - DroneCompanion.CraftPackChimera_inline3
+
+DroneCompanion.CraftPackChimera_inline1:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.EpicMaterial1
+  amount: 120
+
+DroneCompanion.CraftPackChimera_inline2:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.LegendaryMaterial1
+  amount: 45
+
+DroneCompanion.CraftPackChimera_inline3:
+  $type: gamedataRecipeElement_Record
+  ingredient: Items.QuickHackLegendaryMaterial1
+  amount: 25
+
+DroneCompanion.CraftChimera:
+  $base: Items.VoodooBoysJunkItem1
+  icon: UIIcon.dc_chimera
+  iconPath: dc_chimera
+  displayName: LocKey#Mod-DroneCompanion-Craft-Chimera
+  localizedDescription: LocKey#Mod-DroneCompanion-Craft-Chimera-Desc
+  itemType: ItemType.Gen_Misc
+  tags: [ DroneCompanionGear, DroneCompanionCraft, HideInBackpackUI, HideAtVendor, SkipActivityLog ]
+  quality: Quality.Legendary
+  objectActions: []
+  buyPrice: []
+  sellPrice: []
+  CraftingData: DroneCompanion.CraftPackChimera
+
+Mappins.DroneCompanionVariant:
+  $type: gamedataMappinVariant_Record
+  enumName: CPO_PingDoorVariant
+
+Mappins.DroneCompanionMappin:
+  $type: gamedataMappinDefinition_Record
+  showInWorld: False
+  showOnMap: True
+  showOnMinimap: True
+  visibilityRange: 0
+  possibleVariants:
+    - Mappins.DroneCompanionVariant

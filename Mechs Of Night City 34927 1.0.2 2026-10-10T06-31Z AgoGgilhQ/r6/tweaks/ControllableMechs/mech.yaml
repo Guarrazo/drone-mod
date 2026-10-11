@@ -1,0 +1,62 @@
+Attacks.CM_Missile:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 5.0
+  damageType: DamageTypes.Physical
+  statModifiers: []
+  statusEffects: []
+
+Character.mnc_player_minotaur:
+  $base: Character.q003_militech_mech
+  entityTemplatePath: mnc\mech\player_minotaur.ent
+  appearanceName: mnc_militech_01
+  attachmentSlots:
+    - !append-once AttachmentSlots.MNC_Pod
+    - !append-once AttachmentSlots.Chest
+    - !append-once AttachmentSlots.Head
+    - !append-once AttachmentSlots.LeftArm
+    - !append-once AttachmentSlots.RightArm
+
+AttachmentSlots.MNC_Pod:
+  $type: AttachmentSlot
+  entitySlotName: mnc_Pod
+
+Attacks.CM_Mortar:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 6.0
+  damageType: DamageTypes.Physical
+  statModifiers: []
+  statusEffects: []
+
+Attacks.CM_DroneRound:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 0.6
+  damageType: DamageTypes.Physical
+  statModifiers: []
+  statusEffects: []
+
+Attacks.CM_BombusFrag:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 5.0
+  damageType: DamageTypes.Physical
+  statModifiers: []
+  statusEffects: []
+
+Attacks.CM_BombusHE:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 9.0
+  damageType: DamageTypes.Physical
+  statModifiers: []
+  statusEffects: []
+
+Attacks.CM_BombusShock:
+  $base: Attacks.BaseProjectileAoEAttack
+  effectTag: explosion_round_charged
+  range: 7.0
+  damageType: DamageTypes.Electric
+  statModifiers: []
+  statusEffects: []
